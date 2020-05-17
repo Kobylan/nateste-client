@@ -11,8 +11,8 @@ export default class App extends React.Component {
   };
 
   position = (e) => {
-    let x = e.nativeEvent.clientX;
-    let y = e.nativeEvent.clientY;
+    let x = e.nativeEvent.clientX || e.nativeEvent.pageX;
+    let y = e.nativeEvent.clientY || e.nativeEvent.pageY;
     this.setState({
       x: x,
       y: y,

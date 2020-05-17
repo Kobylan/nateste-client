@@ -15,24 +15,31 @@ const Circle = styled.div`
   will-change: color, transform;
 `;
 
+let x = 0;
+let y = 0;
 export default class Ball extends Component {
-  move = () => {
-    let x = this.props.position.x;
-    let y = this.props.position.y;
-    const css =
-      "transform: translate(" +
-      x -
-      window.innerWidth / 2 +
-      "px" +
-      ", " +
-      y -
-      window.innerHeight / 2 +
-      "px)";
-    console.log(css);
-    return css;
-  };
-
   render() {
-    return <Circle style={this.move} />;
+    let xmouse = this.props.position.x;
+    let ymouse = this.props.position.y;
+
+    if (!x || !y) {
+      x = xmouse;
+      y = ymouse;
+    } else {
+      x += (xmouse - x) * 0.25;
+      y += (ymouse - y) * 0.25;
+    }
+    let speed = Math.min(Math.abs(x - xmouse), 100) / 100;
+    let css = `translate(${x - window.innerWidth / 2}px, ${
+      y - window.innerHeight / 2
+    }px) scale(${0.5 + 0.5 * (1 - speed)})`;
+
+    return (
+      <Circle
+        style={{
+          transform: css,
+        }}
+      />
+    );
   }
 }
