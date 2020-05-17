@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Tags from "./Tags";
-import TextArea from "./TextArea";
+import TextArea from "./Order.Components/TextArea";
 import styled from "styled-components";
 
 const Form = styled.div`
@@ -16,7 +15,6 @@ class Order extends Component {
     return (
       <Form>
         <TextArea />
-        <Tags />
       </Form>
     );
   }

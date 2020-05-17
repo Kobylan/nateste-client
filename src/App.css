@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-  html, body{
-  background: #40004a;
-  color: #ffffff;
-  font-family: 'PT Sans', sans-serif;
+html,
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
 }
 
-
 ::selection {
-  background-color: #EFBB35;
+  background-color: #efbb35;
   color: #fff;
+}
+
+.left {
+  background-color: #efbb35;
+  height: 100%;
+}
+.right {
+  background-color: black;
+  height: 100%;
 }

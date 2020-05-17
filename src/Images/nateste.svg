@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1236" height="355" viewBox="310 545 1236 355">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        font-size: 299.999px;
+        font-family: Rockwell;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text id="teste" class="cls-1" x="853.39" y="821.347">teste</text>
+  <rect id="Прямоугольник_скругл._углы_1" data-name="Прямоугольник, скругл. углы 1" class="cls-2" x="311" y="621" width="470" height="243"/>
+  <text id="na" class="cls-3" x="362.515" y="818.106">na</text>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-4" d="M816,547h8V902h-8V547Z"/>
+</svg>

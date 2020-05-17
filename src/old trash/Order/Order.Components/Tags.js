@@ -38,7 +38,7 @@ const Input2 = styled.input`
   font-weight: 700;
   border: 0;
   padding: 0 !important;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 0.2em 0em;
   outline: none;
   background-color: transparent;
@@ -62,7 +62,7 @@ class Order extends Component {
           })}
           <Input>
             <Input2
-              placeholder={tags.length === 0 ? "#начинка" : null}
+              placeholder={tags.length === 0 ? "#ключевые слова" : null}
               value={value}
               onChange={(e) => {
                 this.setState({

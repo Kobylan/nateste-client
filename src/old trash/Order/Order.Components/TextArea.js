@@ -4,6 +4,8 @@ import styled from "styled-components";
 const Textarea = styled.textarea`
   position: relative;
   font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
   width: 100%;
   outline: none;
   background-color: transparent;
@@ -53,7 +55,7 @@ class TextArea extends Component {
       <Textarea
         rows={this.state.rows}
         value={this.state.value}
-        placeholder={"Enter your text here..."}
+        placeholder={"Опишите свой торт..."}
         onChange={this.handleChange}
       />
     );
