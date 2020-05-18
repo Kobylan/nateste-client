@@ -14,11 +14,21 @@ body {
   color: #fff;
 }
 
-.left {
-  background-color: #efbb35;
-  height: 100%;
+/* MOUSE FOLLOWING BALL */
+
+#ball {
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -22.5px 0 0 -22.5px;
+  pointer-events: none;
+  transition: color 0.5s;
+  will-change: color, transform;
 }
-.right {
-  background-color: black;
-  height: 100%;
-}
+
+/* 2 SIDE */

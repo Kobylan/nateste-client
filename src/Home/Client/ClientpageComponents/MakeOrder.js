@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Order = styled.div`
-  background-color: lightgoldenrodyellow;
+const Make = styled.div`
+  background-color: lightblue;
   height: 100%;
   display: block !important;
 `;
 
-export default class Orders extends Component {
+export default class MakeOrder extends Component {
   render() {
-    return <Order>Orders</Order>;
+    return <Make>MakeOrder</Make>;
   }
 }
