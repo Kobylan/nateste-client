@@ -9,6 +9,6 @@ const Make = styled.div`
 
 export default class MakeOrder extends Component {
   render() {
-    return <Make>MakeOrder</Make>;
+    return <Make className={this.props.pos}>MakeOrder</Make>;
   }
 }

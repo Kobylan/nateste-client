@@ -9,6 +9,6 @@ const Order = styled.div`
 
 export default class Orders extends Component {
   render() {
-    return <Order>Oresers</Order>;
+    return <Order className={this.props.pos}>Oresers</Order>;
   }
 }

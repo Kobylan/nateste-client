@@ -9,6 +9,6 @@ const OLiset = styled.div`
 
 export default class OrderList extends Component {
   render() {
-    return <OLiset>OrderList</OLiset>;
+    return <OLiset className={this.props.pos}>OrderList</OLiset>;
   }
 }

@@ -32,3 +32,9 @@ body {
 }
 
 /* 2 SIDE */
+.under {
+  z-index: -1;
+}
+.over {
+  z-index: 1;
+}
