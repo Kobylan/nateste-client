@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Order = styled.div`
-  background-color: lightgoldenrodyellow;
+const OLiset = styled.div`
+  background-color: Red;
   height: 100%;
   display: block !important;
 `;
 
-export default class Orders extends Component {
+export default class OrderList extends Component {
   render() {
-    return <Order>Oresers</Order>;
+    return <OLiset>OrderList</OLiset>;
   }
 }
