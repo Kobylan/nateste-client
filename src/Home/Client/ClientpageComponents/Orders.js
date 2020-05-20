@@ -4,8 +4,11 @@ export default class Orders extends Component {
   render() {
     return (
       <div id="orders" className={this.props.class}>
-        Oresers
-        <button onClick={(e) => this.props.action()}> change</button>
+        {this.props.orderList ? (
+          <button onClick={(e) => this.props.action()}> Back </button>
+        ) : (
+          <button onClick={(e) => this.props.action()}> Orders </button>
+        )}
       </div>
     );
   }

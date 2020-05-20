@@ -19,42 +19,38 @@ export default class ClientPage extends Component {
     return (
       <React.Fragment>
         <main>
-          <NewOrder
-            action={() => {
-              this.setState({
-                newOrder: false,
-                orders: true,
-              });
-            }}
-            class={this.state.newOrder ? "curr" : "inv"}
-          />
+          <NewOrder class={this.state.newOrder ? "curr" : "inv"} />
           <MakeOrder
+            newOrder={this.state.newOrder}
             action={() => {
-              this.setState({
-                newOrder: true,
-                orders: false,
-              });
+              this.state.newOrder
+                ? this.setState({
+                    newOrder: false,
+                    orders: true,
+                  })
+                : this.setState({
+                    newOrder: true,
+                    orders: false,
+                  });
             }}
             class={this.state.makeOrder ? "curr" : "inv"}
           />
           <Orders
+            orderList={this.state.orderList}
             action={() => {
-              this.setState({
-                makeOrder: false,
-                orderList: true,
-              });
+              this.state.orderList
+                ? this.setState({
+                    orderList: false,
+                    makeOrder: true,
+                  })
+                : this.setState({
+                    orderList: true,
+                    makeOrder: false,
+                  });
             }}
             class={this.state.orders ? "curr" : "inv"}
           />
-          <OrderList
-            action={() => {
-              this.setState({
-                orderList: false,
-                makeOrder: true,
-              });
-            }}
-            class={this.state.orderList ? "curr" : "inv"}
-          />
+          <OrderList class={this.state.orderList ? "curr" : "inv"} />
         </main>
       </React.Fragment>
     );

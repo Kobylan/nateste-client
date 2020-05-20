@@ -5,7 +5,6 @@ export default class OrderList extends Component {
     return (
       <div id="order-list" className={this.props.class}>
         OrderList
-        <button onClick={(e) => this.props.action()}> change</button>
       </div>
     );
   }

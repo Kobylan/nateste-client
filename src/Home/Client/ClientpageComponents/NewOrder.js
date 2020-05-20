@@ -5,7 +5,6 @@ export default class NewOrder extends Component {
     return (
       <div id="new-order" className={this.props.class}>
         NewOrder
-        <button onClick={(e) => this.props.action()}> change</button>
       </div>
     );
   }
