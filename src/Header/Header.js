@@ -7,6 +7,7 @@ const H = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 50px;
 `;
 const Logo = styled.img`
   width: 120px;

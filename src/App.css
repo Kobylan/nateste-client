@@ -32,9 +32,42 @@ body {
 }
 
 /* 2 SIDE */
-.under {
-  z-index: -1;
+main {
+  display: flex;
 }
-.over {
-  z-index: 1;
+
+main div {
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+#new-order {
+  background: tomato;
+}
+
+#make-order {
+  background: darkred;
+}
+
+#order-list {
+  background: teal;
+}
+
+#orders {
+  background: orangered;
+}
+
+.inv {
+  max-width: 0%;
+  white-space: nowrap;
+  flex-basis: 0%;
+}
+
+.curr {
+  flex-basis: 100%;
+  white-space: nowrap;
+  max-width: 100%;
 }
