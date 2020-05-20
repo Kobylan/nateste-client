@@ -11,10 +11,6 @@ export default class ClientPage extends Component {
     orders: true,
     orderList: false,
   };
-  _width = (e) => {
-    let x = e.x;
-    return 54 - x / ((window.innerWidth / 2) * 0.25) + "% auto";
-  };
   render() {
     return (
       <React.Fragment>
