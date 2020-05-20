@@ -7,6 +7,7 @@ export default class MakeOrder extends Component {
         id="make-order"
         onClick={(e) => this.props.action()}
         className={this.props.class}
+        style={{ fontSize: "50px" }}
       >
         {this.props.newOrder ? "Back" : "MakeOrder"}
       </div>

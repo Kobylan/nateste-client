@@ -15,7 +15,7 @@ var y = 0;
 var halfSW = window.innerWidth / 2;
 var halfSH = window.innerHeight / 2;
 var timestamp = performance.now();
-var minFrameDiff = 1000 / 45; // 30FPS
+var minFrameDiff = 1000 / 60; // 30FPS
 
 function followMouse(now) {
   var frameDiff = now - timestamp;
@@ -35,8 +35,8 @@ function followMouse(now) {
     y = ymouse;
     ball.style.display = `none`;
   } else {
-    x += (xmouse - x) * 0.25;
-    y += (ymouse - y) * 0.25;
+    x += (xmouse - x) * 0.3;
+    y += (ymouse - y) * 0.3;
     ball.style.display = `block`;
   }
 

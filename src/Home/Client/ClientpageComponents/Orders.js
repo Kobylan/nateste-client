@@ -7,6 +7,7 @@ export default class Orders extends Component {
         id="orders"
         onClick={(e) => this.props.action()}
         className={this.props.class}
+        style={{ fontSize: "50px" }}
       >
         {this.props.orderList ? "Back" : "Orders"}
       </div>
